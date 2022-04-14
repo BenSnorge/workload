@@ -2,3 +2,5 @@
 @use './base/utilities';
 @use './base/variables';
 @use './vendors/bootstrap/scss/bootstrap.scss';
+@use './layouts/main.scss';
+@use './components/hero.scss';

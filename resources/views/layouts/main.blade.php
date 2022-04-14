@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Gym</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="{{ mix('css/styles.css') }}">
-  
 </head>
+
 <body>
-  <header class="header">
-    <div class="container">
-    <div class="header__logo">
-      Smith Realty 
+  <nav class="navbar navbar-expand-sm navbar-light py-4">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-3 ms-5" href="#">Fitness</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-5">
+          <a class="navlink" aria-current="page" href="#">Home</a>
+          <a class="navlink" href="#">Courses</a>
+          <a class="navlink" href="#">Trainers</a>
+          <a href="#" class="navlink">Nutrition</a>
+          <a href="#" class="navlink">Prices</a>
+          <a href="#" class="navlink">Membership</a>
+
+        </div>
+      </div>
     </div>
-    <div class="header__menu">
-      <a class="header__menu-link header__menu-link--active" href="#">Home</a>
-      <a class="header__menu-link" href="#">Listing</a>
-      <a class="header__menu-link" href="#">Property</a>
-      <a class="header__menu-link" href="#">Pages</a>
-    </div>
-    <div class="header__account">
-      <div class="header__account-link"><i class="fa-solid fa-heart"></i></div>
-      <div class="header__account-link"><i class="fa-solid fa-user"></i></div>
-    </div>
-    </div>
-  </header>
+  </nav>
   @yield('content')
+
 </body>
+<script src="{{ mix('js/app.js') }}"></script>
+
 </html>
