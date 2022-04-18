@@ -2,7 +2,12 @@
 @use './base/utilities';
 @use './base/variables';
 @use './vendors/bootstrap/scss/bootstrap.scss';
+// Navbar
 @use './layouts/main.scss';
+
+// Components 
 @use './components/hero.scss';
 @use './components/features.scss';
 @use './components/home-content.scss';
+@use './components/footer.scss';
+@use './components/social-media.scss';
