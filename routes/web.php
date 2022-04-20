@@ -22,3 +22,6 @@ Route::get('/memberships', function () {
 Route::get('/trainers', function () {
     return view('pages/trainers');
 });
+Route::get('/nutrition', function () {
+    return view('pages/nutrition');
+});

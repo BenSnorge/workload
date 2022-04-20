@@ -24,7 +24,7 @@
         <div class="navbar-nav ms-5">
           <a class="navlink" href="#">Classes</a>
           <a class="navlink" href="/trainers">Trainers</a>
-          <a href="#" class="navlink">Nutrition</a>
+          <a href="/nutrition" class="navlink">Nutrition</a>
           <a href="/memberships" class="navlink">Membership</a>
 
         </div>

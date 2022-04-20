@@ -46,7 +46,7 @@
           <div class="home-content__box d-flex flex-column justify-content-center  align-items-center">
             <h3>The Importance of Nutrition</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem nesciunt odit autem placeat fugiat quaerat enim libero, quo odio dolor nam reprehenderit minima quis natus molestiae doloremque, eius et quisquam.</p>
-            <a class="btn btn-outline-dark">Learn More</a>
+            <a href="/nutrition" class="btn btn-outline-dark">Learn More</a>
           </div>
         </div>
         <div class="col-lg-6">
