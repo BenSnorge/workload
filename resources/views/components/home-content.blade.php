@@ -16,7 +16,7 @@
           <div class="home-content__box d-flex flex-column justify-content-center  align-items-center">
             <h3>Become A Member</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem nesciunt odit autem placeat fugiat quaerat enim libero, quo odio dolor nam reprehenderit minima quis natus molestiae doloremque, eius et quisquam.</p>
-            <a class="btn btn-outline-dark">Join Now</a>
+            <a class="btn btn-outline-dark" href="/memberships">Join Now</a>
           </div>
         </div>
         <div class="col-lg-6">
@@ -36,7 +36,7 @@
           <div class="home-content__box d-flex flex-column justify-content-center  align-items-center">
             <h3>Our Instructors</h3>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem nesciunt odit autem placeat fugiat quaerat enim libero, quo odio dolor nam reprehenderit minima quis natus molestiae doloremque, eius et quisquam.</p>
-            <a class="btn btn-outline-dark">Meet Our Trainers</a>
+            <a href="/trainers" class="btn btn-outline-dark">Meet Our Trainers</a>
           </div>
         </div>
       </div>
