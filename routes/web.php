@@ -25,3 +25,6 @@ Route::get('/trainers', function () {
 Route::get('/nutrition', function () {
     return view('pages/nutrition');
 });
+Route::get('/classes', function () {
+    return view('pages/classes');
+});
