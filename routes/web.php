@@ -28,3 +28,15 @@ Route::get('/nutrition', function () {
 Route::get('/classes', function () {
     return view('pages/classes');
 });
+Route::get('/pages/login', function () {
+    return view('pages/login');
+});
+Route::get('/pages/register', function () {
+    return view('pages/register');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__ . '/auth.php';
