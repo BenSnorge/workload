@@ -34,7 +34,7 @@
               </ul> --}}
             </div>
 
-            <a href="#" class="btn btn-outline-danger mb-5 membership__btn">Join Now</a>
+            <a href="#" class="btn btn-outline-danger mb-5 membership__btn">Sign Up!</a>
             
           </div>
         </div>
@@ -65,7 +65,7 @@
               </ul> --}}
             </div>
 
-            <a href="#" class="btn btn-outline-danger mb-5 membership__btn">Join Now</a>
+            <a href="#" class="btn btn-outline-danger mb-5 membership__btn">Sign Up!</a>
             
           </div>
         </div>

@@ -34,6 +34,12 @@ Route::get('/pages/login', function () {
 Route::get('/pages/register', function () {
     return view('pages/register');
 });
+Route::get('/admin/home-page', function () {
+    return view('admin/home-page');
+})->middleware(['auth'])->name('home-page');
+
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
