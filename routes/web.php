@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,6 +39,13 @@ Route::get('/admin/home-page', function () {
     return view('admin/home-page');
 })->middleware(['auth'])->name('home-page');
 
+Route::controller(HomeController::class)->group(function () {
+    Route::post('/admin/home-page', 'store');
+});
+
+Route::controller(HomeController::class)->group(function () {
+    Route::get('/', 'index');
+});
 
 
 
