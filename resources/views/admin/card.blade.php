@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mb-4">
             <div class="card">
-                <h5 class="card-header">Edit Home Page Hero Settings</h5>
+                <h5 class="card-header">Edit Home Page Card Settings</h5>
                 <div class="card-body">
             <form method="POST" action="/admin/home-page">
                 @csrf

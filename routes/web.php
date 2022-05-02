@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NavigationController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\View;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages/home');
-});
+/* Route::get('/', [HomeController::class, 'index']);
+ */
+
 Route::get('/memberships', function () {
     return view('pages/memberships');
 });
@@ -35,18 +37,22 @@ Route::get('/pages/login', function () {
 Route::get('/pages/register', function () {
     return view('pages/register');
 });
-Route::get('/admin/home-page', function () {
+/* Route::get('/admin/home-page', function () {
     return view('admin/home-page');
-})->middleware(['auth'])->name('home-page');
-
-Route::controller(HomeController::class)->group(function () {
-    Route::post('/admin/home-page', 'store');
-});
+})->middleware(['auth'])->name('home-page'); */
 
 Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'index');
+    Route::get('/pages/classes', 'index');
+    Route::get('/layouts/main', 'index');
+    Route::post('/admin/home-page', 'saveHome');
+    Route::get('/admin/home-page', 'general')->middleware(['auth'])->name('home-page');
+    Route::get('/admin/card', 'card')->middleware(['auth'])->name('card');
 });
 
+/* Route::controller(NavigationController::class)->group(function () {
+    Route::post('/admin/home-page', 'saveNav');
+}); */
 
 
 Route::get('/dashboard', function () {

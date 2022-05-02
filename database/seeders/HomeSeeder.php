@@ -20,6 +20,7 @@ class HomeSeeder extends Seeder
     {
         DB::table('homes')->insert([
             'site_title' => 'Gym',
+            'company_name' => 'Fitness',
             'hero_subtitle' => 'Become The Best Version Of Yourself',
             'hero_title' => 'Fitness for everyone',
             'hero_link' => 'Become A Member!',

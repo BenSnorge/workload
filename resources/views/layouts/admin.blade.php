@@ -20,45 +20,60 @@
                     <span class="fs-5 d-none d-sm-inline">Admin Dashboard</span>
                 </a>
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                    <li class="nav-item">
-                        <a href="/admin/home-page" class="nav-link align-middle px-0 text-black text-decoration-none">
-                            <span class="ms-1 d-none d-sm-inline">Home Page</span>
-                        </a>
+                    <li class="nav-item py-2">
+                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
+                            Home Page
+                        </div>
+                        <li class="collapse ps-4 " id="collapseExample1">
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/home-page">Hero Settings</a>
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/card">Card Settings</a>
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/home-page">Content Settings</a>
+                        </li>
+                        
+                        
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link align-middle px-0 text-black text-decoration-none">
-                            <span class="ms-1 d-none d-sm-inline">Classes</span>
-                        </a>
+                    <li class="nav-item py-2">
+                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                            Classes
+                        </div>
+                        <li class="collapse ps-4 " id="collapseExample2">
+                            <a class="text-decoration-none p-1 text-dark lh-lg" href="/admin/home-page">All Classes</a>
+
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/home-page">New Class</a>
+                        </li>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link align-middle px-0 text-black text-decoration-none">
-                            <span class="ms-1 d-none d-sm-inline">About Us</span>
-                        </a>
+                    <li class="nav-item py-2">
+                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                            Nutrition
+                        </div>
+                        <li class="collapse ps-4 " id="collapseExample3">
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/home-page">Nutrition Settings</a>
+                        </li>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link align-middle px-0 text-black text-decoration-none">
-                            <span class="ms-1 d-none d-sm-inline">Trainers</span>
-                        </a>
+                    <li class="nav-item py-2">
+                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Trainers
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link align-middle px-0 text-black text-decoration-none">
-                            <span class="ms-1 d-none d-sm-inline">Membership Plans</span>
-                        </a>
+                    <li class="nav-item py-2">
+                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Memberships Plans
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link align-middle px-0 text-black text-decoration-none">
-                            <span class="ms-1 d-none d-sm-inline">Members</span>
-                        </a>
+                    <li class="nav-item py-2">
+                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Members
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link align-middle px-0 text-black text-decoration-none">
-                            <span class="ms-1 d-none d-sm-inline">Social Media</span>
-                        </a>
+                    <li class="nav-item py-2">
+                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Social Media
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link align-middle px-0 text-black text-decoration-none">
-                            <span class="ms-1 d-none d-sm-inline">Footer Settings</span>
-                        </a>
+                    <li class="nav-item py-2">
+                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Footer Settings
+                        </div>
                     </li>
                 </ul>
                 <hr>
