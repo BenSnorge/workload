@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Home;
+
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\View;
 
@@ -27,11 +28,6 @@ class HomeController extends Controller
     {
         return view('/admin/home-page');
     }
-    public function card()
-    {
-        return view('/admin/card');
-    }
-
 
     public function saveHome(Request $request)
     {

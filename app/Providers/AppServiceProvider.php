@@ -2,11 +2,12 @@
 
 namespace App\Providers;
 
+use App\Models\Card;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\View;
 use App\Models\Home;
-use App\Models\Navigation;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -29,5 +30,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $home = Home::find(1);
         View::share("home", $home);
+        $card = Card::find(1);
+        View::share('card', $card);
     }
 }

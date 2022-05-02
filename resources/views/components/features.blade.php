@@ -3,23 +3,23 @@
     <div class="row">
       <div class="col-lg-4 ">
         <div class="features__card">
-          <i class="fa-solid fa-clock features__icon"></i>
-        <h1>24 Hours</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, delectus maiores enim aut assumenda at labore facere nobis ipsam aliquam? Illo repudiandae exercitationem harum in?</p>
+          <i class="{{ $card->card1_icon }} features__icon"></i>
+        <h1>{{ $card->card1_heading }}</h1>
+        <p>{{ $card->card1_description }}</p>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="features__card">
-        <i class="fa-solid fa-dumbbell features__icon"></i>
-        <h1>Trainers</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, delectus maiores enim aut assumenda at labore facere nobis ipsam aliquam? Illo repudiandae exercitationem harum in?</p>
+        <i class="{{ $card->card2_icon }} features__icon"></i>
+        <h1>{{ $card->card2_heading }}</h1>
+        <p>{{ $card->card2_description }}</p>
         </div>
       </div>
       <div class="col-lg-4 ">
         <div class="features__card">
-          <i class="fa-solid fa-utensils features__icon"></i>
-          <h1>Nutrition</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, delectus maiores enim aut assumenda at labore facere nobis ipsam aliquam? Illo repudiandae exercitationem harum in?</p>
+          <i class="{{ $card->card3_icon }} features__icon"></i>
+          <h1>{{ $card->card3_heading }}</h1>
+          <p>{{ $card->card3_description }}</p>
       </div>
     </div>
     </div>

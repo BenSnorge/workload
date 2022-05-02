@@ -8,28 +8,28 @@
                 <div class="card-body">
             <form method="POST" action="/admin/home-page">
                 @csrf
-                <div class="form-group">
+                <div class="form-group py-2">
                     <label for="inputtitle">Site Title</label>
                     <input id="inputtitle" type="text" class="form-control " name="site_title" value="{{ old('site_title', $home->site_title) }}" autocomplete="site_title" autofocus placeholder="Add Site Title">
                 </div>
-                <div class="form-group">
+                <div class="form-group py-2">
                     <label for="inputcompany">Company Name</label>
                     <input id="inputcompany" type="text" class="form-control " name="company_name" value="{{ old('company_name', $home->company_name) }}" autocomplete="company_name" autofocus placeholder="Add Company Name">
                 </div>
-                <div class="form-group">
+                <div class="form-group py-2">
                     <label for="inputherosubtuitle">Hero Subtitle</label>
                     <input id="inputherosubtuitle" type="text" class="form-control"
                     name="hero_subtitle"  value="{{old('hero_subtitle', $home->hero_subtitle)}}"  autocomplete="title" autofocus placeholder="Add the hero subtitle">
                 </div>
-                <div class="form-group">
+                <div class="form-group py-2">
                     <label for="inputherotitle">Home Title</label>
                     <input id="inputherotitle" type="text" class="form-control " value="{{old('hero_subtitle', $home->hero_title)}}" name="hero_title"  autocomplete="title" autofocus placeholder="Add the hero title">
                 </div>
-                <div class="form-group">
+                <div class="form-group py-2">
                     <label for="inputherolink">Hero Link</label>
                     <input id="inputherolink" type="text" class="form-control " value="{{old('hero_link', $home->hero_link)}}"  name="hero_link"  autocomplete="title" autofocus placeholder="Add the hero link">
                 </div>
-                <div class="form-group">
+                <div class="form-group py-2">
                     <label for="">Hero Image URL</label>
                     <input id="inputheroimage" type="text" class="form-control" value="{{old('hero_image', $home->hero_image)}}"  name="hero_image"  autocomplete="hero_image" autofocus placeholder="Change the hero image">
                 </div>

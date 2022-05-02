@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NavigationController;
 use Illuminate\Support\Facades\Route;
@@ -47,7 +48,11 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/layouts/main', 'index');
     Route::post('/admin/home-page', 'saveHome');
     Route::get('/admin/home-page', 'general')->middleware(['auth'])->name('home-page');
+});
+
+Route::controller(CardController::class)->group(function () {
     Route::get('/admin/card', 'card')->middleware(['auth'])->name('card');
+    Route::post('/admin/card', 'saveCard');
 });
 
 /* Route::controller(NavigationController::class)->group(function () {

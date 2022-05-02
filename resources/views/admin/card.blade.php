@@ -6,32 +6,43 @@
             <div class="card">
                 <h5 class="card-header">Edit Home Page Card Settings</h5>
                 <div class="card-body">
-            <form method="POST" action="/admin/home-page">
+            <form method="POST" action="/admin/card">
                 @csrf
-                <div class="form-group">
-                    <label for="inputtitle">Site Title</label>
-                    <input id="inputtitle" type="text" class="form-control " name="site_title" value="{{ old('site_title', $home->site_title) }}" autocomplete="site_title" autofocus placeholder="Add Site Title">
+                <div class="form-group py-2">
+                    <label for="inputicon">Card1 Icon</label>
+                    <input id="inputicon" type="text" class="form-control" name="card1_icon" value="{{ old('card1_icon', $card->card1_icon) }}" autocomplete="card1_icon" autofocus placeholder="Add FontAwesome Icon Class name">
                 </div>
-                <div class="form-group">
-                    <label for="inputcompany">Company Name</label>
-                    <input id="inputcompany" type="text" class="form-control " name="company_name" value="{{ old('company_name', $home->company_name) }}" autocomplete="company_name" autofocus placeholder="Add Company Name">
+                <div class="form-group py-2">
+                    <label for="inputcardheading">Card1 Heading</label>
+                    <input id="inputcardheading" type="text" class="form-control" name="card1_heading" value="{{ old('card1_heading', $card->card1_heading) }}" autocomplete="card1_heading" autofocus placeholder="Add Card Heading">
                 </div>
-                <div class="form-group">
-                    <label for="inputherosubtuitle">Hero Subtitle</label>
-                    <input id="inputherosubtuitle" type="text" class="form-control"
-                    name="hero_subtitle"  value="{{old('hero_subtitle', $home->hero_subtitle)}}"  autocomplete="title" autofocus placeholder="Add the hero subtitle">
+                <div class="form-group py-2">
+                    <label for="inputcarddescription">Card1 Heading</label>
+                    <input id="inputcarddescription" type="text" class="form-control" name="card1_description" value="{{ old('card1_description', $card->card1_description) }}" autocomplete="card1_description" autofocus placeholder="Add Card Description">
                 </div>
-                <div class="form-group">
-                    <label for="inputherotitle">Home Title</label>
-                    <input id="inputherotitle" type="text" class="form-control " value="{{old('hero_subtitle', $home->hero_title)}}" name="hero_title"  autocomplete="title" autofocus placeholder="Add the hero title">
+                <div class="form-group py-2">
+                    <label for="inputicon">Card2 Icon</label>
+                    <input id="inputicon" type="text" class="form-control" name="card2_icon" value="{{ old('card2_icon', $card->card2_icon) }}" autocomplete="card2_icon" autofocus placeholder="Add FontAwesome Icon Class name">
                 </div>
-                <div class="form-group">
-                    <label for="inputherolink">Hero Link</label>
-                    <input id="inputherolink" type="text" class="form-control " value="{{old('hero_link', $home->hero_link)}}"  name="hero_link"  autocomplete="title" autofocus placeholder="Add the hero link">
+                <div class="form-group py-2">
+                    <label for="inputcardheading">Card2 Heading</label>
+                    <input id="inputcardheading" type="text" class="form-control" name="card2_heading" value="{{ old('card2_heading', $card->card2_heading) }}" autocomplete="card2_heading" autofocus placeholder="Add Card Heading">
                 </div>
-                <div class="form-group">
-                    <label for="">Hero Image URL</label>
-                    <input id="inputheroimage" type="text" class="form-control" value="{{old('hero_image', $home->hero_image)}}"  name="hero_image"  autocomplete="hero_image" autofocus placeholder="Change the hero image">
+                <div class="form-group py-2">
+                    <label for="inputcarddescription">Card2 Description</label>
+                    <input id="inputcarddescription" type="text" class="form-control" name="card2_description" value="{{ old('card2_description', $card->card2_description) }}" autocomplete="card2_description" autofocus placeholder="Add Card Description">
+                </div>
+                <div class="form-group py-2">
+                    <label for="inputicon">Card3 Icon</label>
+                    <input id="inputicon" type="text" class="form-control" name="card3_icon" value="{{ old('card3_icon', $card->card3_icon) }}" autocomplete="card3_icon" autofocus placeholder="Add FontAwesome Icon Class name">
+                </div>
+                <div class="form-group py-2">
+                    <label for="inputcardheading">Card3 Heading</label>
+                    <input id="inputcardheading" type="text" class="form-control" name="card3_heading" value="{{ old('card3_heading', $card->card3_heading) }}" autocomplete="card3_heading" autofocus placeholder="Add Card Heading">
+                </div>
+                <div class="form-group py-2">
+                    <label for="inputcarddescription">Card3 Description</label>
+                    <input id="inputcarddescription" type="text" class="form-control" name="card3_description" value="{{ old('card3_description', $card->card3_description) }}" autocomplete="card3_description" autofocus placeholder="Add Card Description">
                 </div>
                 <div class="row">
                     <div class="col-sm-6 pb-2 pb-sm-4 pb-lg-0 pr-0">
