@@ -47,7 +47,7 @@
                             Nutrition
                         </div>
                         <li class="collapse ps-4 " id="collapseExample3">
-                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/home-page">Nutrition Settings</a>
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/nutrition">Nutrition Settings</a>
                         </li>
                     </li>
                     <li class="nav-item py-2">

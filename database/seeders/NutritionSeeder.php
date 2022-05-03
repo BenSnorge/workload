@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Illuminate\Support\Carbon;
 
-class ContentSeeder extends Seeder
+class NutritionSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,15 +18,15 @@ class ContentSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('contents')->insert([
-            'content_heading' => 'Who We Are',
-            'content_p' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa numquam neque veniam debitis ipsam commodi perspiciatis adipisci fugiat fuga sequi repellat, doloremque deleniti voluptatem voluptates? Explicabo temporibus voluptatum nulla, minima quod eius optio nostrum! Officiis, dolores inventore! Facere dolorem voluptates totam excepturi nam ut? Consectetur, maxime? Quas nihil ipsam obcaecati.',
+        DB::table('nutrition')->insert([
+            'content_heading' => 'Learn About Nutrition',
+            'content_p' => '',
             'content_button' => '',
-            'content_image' => '',
+            'content_image' => 'https://images.unsplash.com/photo-1497888329096-51c27beff665?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80',
             'updated_at' => Carbon::now(),
             'created_at' => Carbon::now(),
         ]);
-        DB::table('contents')->insert([
+        DB::table('nutrition')->insert([
             'content_heading' => 'Become A Member',
             'content_p' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem nesciunt odit autem placeat fugiat quaerat enim libero, quo odio dolor nam reprehenderit minima quis natus molestiae doloremque, eius et quisquam.',
             'content_button' => 'Join Now',
@@ -35,7 +35,7 @@ class ContentSeeder extends Seeder
             'created_at' => Carbon::now(),
 
         ]);
-        DB::table('contents')->insert([
+        DB::table('nutrition')->insert([
             'content_heading' => 'Become A Member',
             'content_p' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem nesciunt odit autem placeat fugiat quaerat enim libero, quo odio dolor nam reprehenderit minima quis natus molestiae doloremque, eius et quisquam.',
             'content_button' => 'Join Now',
@@ -43,7 +43,7 @@ class ContentSeeder extends Seeder
             'updated_at' => Carbon::now(),
             'created_at' => Carbon::now(),
         ]);
-        DB::table('contents')->insert([
+        DB::table('nutrition')->insert([
             'content_heading' => 'Become A Member',
             'content_p' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem nesciunt odit autem placeat fugiat quaerat enim libero, quo odio dolor nam reprehenderit minima quis natus molestiae doloremque, eius et quisquam.',
             'content_button' => 'Join Now',
@@ -51,7 +51,7 @@ class ContentSeeder extends Seeder
             'updated_at' => Carbon::now(),
             'created_at' => Carbon::now(),
         ]);
-        DB::table('contents')->insert([
+        DB::table('nutrition')->insert([
             'content_heading' => 'Heading 5',
             'content_p' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem nesciunt odit autem placeat fugiat quaerat enim libero, quo odio dolor nam reprehenderit minima quis natus molestiae doloremque, eius et quisquam.',
             'content_button' => 'Join Now',
