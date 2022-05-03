@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ContentController;
 use App\Http\Controllers\NavigationController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
@@ -55,6 +56,10 @@ Route::controller(CardController::class)->group(function () {
     Route::post('/admin/card', 'saveCard');
 });
 
+Route::controller(ContentController::class)->group(function () {
+    Route::get('/admin/home-content', 'homeContent')->middleware(['auth'])->name('home-content');
+    Route::post('/admin/home-content', 'update');
+});
 /* Route::controller(NavigationController::class)->group(function () {
     Route::post('/admin/home-page', 'saveNav');
 }); */

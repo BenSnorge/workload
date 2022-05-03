@@ -27,7 +27,7 @@
                         <li class="collapse ps-4 " id="collapseExample1">
                             <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/home-page">Hero Settings</a>
                             <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/card">Card Settings</a>
-                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/home-page">Content Settings</a>
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/home-content">Content Settings</a>
                         </li>
                         
                         

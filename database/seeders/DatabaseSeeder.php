@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(HomeSeeder::class);
         $this->call(CardSeeder::class);
+        $this->call(ContentSeeder::class);
         $this->call(UsersSeeder::class);
     }
 }
