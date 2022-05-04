@@ -2,8 +2,8 @@
 @section('content')
   <div class="nutrition">
     <div class="nutrition__hero">
-      <img loading="lazy" class="nutrition__image" src="https://images.unsplash.com/photo-1497888329096-51c27beff665?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80" alt="">
-      <h1 class="nutrition__title">Learn About Nutrition</h1>
+      <img loading="lazy" class="nutrition__image" src="{{ $nutrition1->content_image }}" alt="">
+      <h1 class="nutrition__title">{{ $nutrition1->content_heading }}</h1>
     </div>
   </div>
   <div class="nutrition bg-light">
@@ -28,7 +28,7 @@
         </div>
         <div class="col-lg-6">
           <div class="nutrition__box">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" class="col-12" alt="">
+          <img loading="lazy" src="{{ $nutrition2->content_image }}" class="col-12" alt="">
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@
         <div class="row">
         <div class="col-lg-6">
           <div class="nutrition__box">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" class="col-12" alt="">
+          <img loading="lazy" src="{{ $nutrition3->content_image }}" class="col-12" alt="">
           </div>
         </div>
         <div class="col-lg-6">
@@ -56,14 +56,14 @@
         </div>
         <div class="col-lg-6">
           <div class="nutrition__box">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1706&q=80" class="col-12" alt="">
+          <img loading="lazy" src="{{ $nutrition4->content_image }}" class="col-12" alt="">
           </div>
         </div>
       </div>
       <div class="row ">
         <div class="col-lg-6">
           <div class="nutrition__box">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1494390248081-4e521a5940db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1612&q=80" class="col-12" alt="">
+          <img loading="lazy" src="{{ $nutrition5->content_image }}" class="col-12" alt="">
           </div>
         </div>
         <div class="col-lg-6">
@@ -75,12 +75,6 @@
       </div>
       <div class="nutrition__description">
       <div class="row justify-content-md-center">
-        {{-- <div class="col-lg-8 col-lg-auto d-flex flex-column justify-content-center  align-items-center">
-          <div class="nutrition__heading">
-            <h1>Track your progess</h1>
-          </div>
-          <p>You can track your progress in the members dashboard and book classes with your favorite trainers!</p>
-        </div> --}}
       </div>
       
     </div>
