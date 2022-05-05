@@ -4,7 +4,7 @@ use App\Http\Controllers\CardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ContentController;
 use App\Http\Controllers\NutritionController;
-use App\Http\Controllers\NavigationController;
+use App\Http\Controllers\SocialController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
 
@@ -65,6 +65,11 @@ Route::controller(ContentController::class)->group(function () {
 Route::controller(NutritionController::class)->group(function () {
     Route::get('/admin/nutrition', 'nutritionContent')->middleware(['auth'])->name('nutrition');
     Route::post('/admin/nutrition', 'update');
+});
+
+Route::controller(SocialController::class)->group(function () {
+    Route::get('/admin/social', 'socialContent')->middleware(['auth'])->name('social');
+    Route::post('/admin/social', 'update');
 });
 
 

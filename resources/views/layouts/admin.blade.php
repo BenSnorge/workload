@@ -66,9 +66,12 @@
                         </div>
                     </li>
                     <li class="nav-item py-2">
-                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample">
                             Social Media
                         </div>
+                        <li class="collapse ps-4 " id="collapseExample7">
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/social">Social Media Settings</a>
+                        </li>
                     </li>
                     <li class="nav-item py-2">
                         <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">

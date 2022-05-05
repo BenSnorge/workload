@@ -7,7 +7,7 @@ use App\Models\Social;
 
 class SocialController extends Controller
 {
-    public function homeContent()
+    public function socialContent()
     {
         return view('/admin/social');
     }
