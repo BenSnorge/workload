@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Models\Card;
 use App\Models\Content;
 use App\Models\Nutrition;
+use App\Models\Social;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\View;
@@ -57,5 +58,14 @@ class AppServiceProvider extends ServiceProvider
         View::share('nutrition5', $nutrition5);
         $nutrition6 = Nutrition::find(6);
         View::share('nutrition6', $nutrition6);
+
+        $social1 = Social::find(1);
+        View::share('social1', $social1);
+        $social2 = Social::find(2);
+        View::share('social2', $social2);
+        $social3 = Social::find(3);
+        View::share('social3', $social3);
+        $social4 = Social::find(4);
+        View::share('social4', $social4);
     }
 }

@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
         $this->call(CardSeeder::class);
         $this->call(ContentSeeder::class);
         $this->call(NutritionSeeder::class);
+        $this->call(SocialSeeder::class);
         $this->call(UsersSeeder::class);
     }
 }
