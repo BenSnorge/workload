@@ -26,20 +26,24 @@
                         </div>
                         <li class="collapse ps-4 " id="collapseExample1">
                             <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/home-page">Hero Settings</a>
+                            <li class="collapse ps-4 " id="collapseExample1">
                             <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/card">Card Settings</a>
-                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/home-content">Content Settings</a>
+                            </li>
+                            <li class="collapse ps-4 " id="collapseExample1">
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/home-content">Content Settings</a></li>
                         </li>
-                        
-                        
                     </li>
                     <li class="nav-item py-2">
                         <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
                             Classes
                         </div>
                         <li class="collapse ps-4 " id="collapseExample2">
-                            <a class="text-decoration-none p-1 text-dark lh-lg" href="/admin/home-page">All Classes</a>
+                            <a class="text-decoration-none p-1 text-dark lh-lg" href="/admin/all-classes">All Classes</a>
 
-                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/home-page">New Class</a>
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/new-class">New Class</a>
+                        </li>
+                        <li class="collapse ps-4 " id="collapseExample2">
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/classes">Classes Settings</a>
                         </li>
                     </li>
                     <li class="nav-item py-2">
@@ -51,19 +55,34 @@
                         </li>
                     </li>
                     <li class="nav-item py-2">
-                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
                             Trainers
                         </div>
+                        <li class="collapse ps-4 " id="collapseExample4">
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/trainers-settings">Trainers Settings</a>
+                        </li>
+                        <li class="collapse ps-4 " id="collapseExample4">
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/all-trainers">All Trainers</a>
+                        </li>
                     </li>
                     <li class="nav-item py-2">
-                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
                             Memberships Plans
                         </div>
+                        <li class="collapse ps-4 " id="collapseExample5">
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/plans-settings">Pans Settings</a>
+                        </li>
                     </li>
                     <li class="nav-item py-2">
-                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample">
                             Members
                         </div>
+                        <li class="collapse ps-4 " id="collapseExample6">
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/all-members">All Members</a>
+                        </li>
+                        <li class="collapse ps-4 " id="collapseExample6">
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/add-members">Add Members</a>
+                        </li>
                     </li>
                     <li class="nav-item py-2">
                         <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -74,9 +93,12 @@
                         </li>
                     </li>
                     <li class="nav-item py-2">
-                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample">
                             Footer Settings
                         </div>
+                        <li class="collapse ps-4 " id="collapseExample8">
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/footer">Footer Settings</a>
+                        </li>
                     </li>
                 </ul>
                 <hr>

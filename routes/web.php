@@ -3,6 +3,7 @@
 use App\Http\Controllers\CardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ContentController;
+use App\Http\Controllers\CourseController;
 use App\Http\Controllers\NutritionController;
 use App\Http\Controllers\SocialController;
 use Illuminate\Support\Facades\Route;
@@ -70,6 +71,15 @@ Route::controller(NutritionController::class)->group(function () {
 Route::controller(SocialController::class)->group(function () {
     Route::get('/admin/social', 'socialContent')->middleware(['auth'])->name('social');
     Route::post('/admin/social', 'update');
+});
+
+Route::controller(CourseController::class)->group(function () {
+    Route::get('admin/all-classes', 'index');
+    Route::get('admin/new-class', 'create');
+    Route::post('admin/all-classes', 'store');
+    Route::get('admin/all-classes/{id}/class-edit', 'edit');
+    Route::put('admin/all-classes/{id}/class-edit', 'update');
+    Route::delete('admin/all-classes/{id}/delete', 'delete');
 });
 
 
