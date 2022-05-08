@@ -78,7 +78,7 @@ Route::controller(CourseController::class)->group(function () {
     Route::get('admin/new-class', 'create');
     Route::post('admin/all-classes', 'store');
     Route::get('admin/all-classes/{id}/class-edit', 'edit');
-    Route::put('admin/all-classes/{id}/class-edit', 'update');
+    Route::post('admin/all-classes/{id}', 'update');
     Route::delete('admin/all-classes/{id}/delete', 'delete');
 });
 

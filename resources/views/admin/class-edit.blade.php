@@ -6,8 +6,9 @@
             <div class="card">
                 <h5 class="card-header">Edit A Course</h5>
                 <div class="card-body">
-            <form method="POST" action="/admin/all-classes">
+            <form method="POST" action="/admin/all-classes/{{$course->id}}">
                 @csrf
+                {{-- @method('PUT') --}}
                 <div class="form-group py-2">
                     <label for="inputcourseimg">Course Image URL</label>
                     <input id="inputcourseimg" type="text" class="form-control " name="course_img" value="{{ old('course_img', $course->course_img) }}"  autofocus placeholder="Course Image URL">

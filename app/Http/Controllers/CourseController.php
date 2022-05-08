@@ -62,7 +62,7 @@ class CourseController extends Controller
         $course->save();
 
 
-        return redirect('admin/all-classes/{id}/class-edit');
+        return redirect('admin/all-classes');
     }
 
     public function delete($id)
