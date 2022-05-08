@@ -7,6 +7,7 @@ use App\Http\Controllers\CourseController;
 use App\Http\Controllers\CourseSettingController;
 use App\Http\Controllers\NutritionController;
 use App\Http\Controllers\SocialController;
+use App\Http\Controllers\StaticPages;
 use Database\Seeders\CourseSettingSeeder;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
@@ -24,6 +25,7 @@ use Illuminate\Support\Facades\View;
 
 /* Route::get('/', [HomeController::class, 'index']);
  */
+
 
 Route::get('/memberships', function () {
     return view('pages/memberships');

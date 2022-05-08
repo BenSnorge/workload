@@ -7,6 +7,7 @@ use App\Models\Content;
 use App\Models\CourseSetting;
 use App\Models\Nutrition;
 use App\Models\Social;
+use App\Models\Course;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\View;
@@ -71,5 +72,8 @@ class AppServiceProvider extends ServiceProvider
 
         $courseSettings = CourseSetting::find(1);
         View::share('courseSetting', $courseSettings);
+
+        $courses = Course::all();
+        View::share('courses', $courses);
     }
 }

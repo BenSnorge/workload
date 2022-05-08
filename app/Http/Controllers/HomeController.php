@@ -8,15 +8,17 @@ use App\Models\Home;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\View;
+use App\Models\Course;
 
 
 class HomeController extends Controller
 {
-    public function __construct()
+    public function showCourses()
     {
-        /*   $id = 1; */
-        /*  $home = Home::find(1);
-        View::share("home", $home); */
+        $courses = Course::all();
+        return view('pages/classes', [
+            'courses' => $courses
+        ]);
     }
     public function index()
     {
