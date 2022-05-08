@@ -4,8 +4,10 @@ use App\Http\Controllers\CardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ContentController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\CourseSettingController;
 use App\Http\Controllers\NutritionController;
 use App\Http\Controllers\SocialController;
+use Database\Seeders\CourseSettingSeeder;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
 
@@ -80,6 +82,11 @@ Route::controller(CourseController::class)->group(function () {
     Route::get('admin/all-classes/{id}/class-edit', 'edit');
     Route::post('admin/all-classes/{id}', 'update');
     Route::delete('admin/all-classes/{id}/delete', 'delete');
+});
+
+Route::controller(CourseSettingController::class)->group(function () {
+    Route::get('admin/classes-settings', 'index');
+    Route::post('admin/classes-settings', 'update');
 });
 
 

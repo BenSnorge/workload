@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Models\Card;
 use App\Models\Content;
+use App\Models\CourseSetting;
 use App\Models\Nutrition;
 use App\Models\Social;
 use Illuminate\Support\ServiceProvider;
@@ -67,5 +68,8 @@ class AppServiceProvider extends ServiceProvider
         View::share('social3', $social3);
         $social4 = Social::find(4);
         View::share('social4', $social4);
+
+        $courseSettings = CourseSetting::find(1);
+        View::share('courseSetting', $courseSettings);
     }
 }

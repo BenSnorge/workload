@@ -43,7 +43,7 @@
                             <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/new-class">New Class</a>
                         </li>
                         <li class="collapse ps-4 " id="collapseExample2">
-                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/classes">Classes Settings</a>
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/classes-settings">Classes Settings</a>
                         </li>
                     </li>
                     <li class="nav-item py-2">

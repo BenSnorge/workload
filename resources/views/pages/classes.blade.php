@@ -2,8 +2,8 @@
 @section('content')
 <div class="classes">
   <div class="classes__hero">
-      <img loading="lazy" class="classes__image" src="https://images.unsplash.com/photo-1527933053326-89d1746b76b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" alt="">
-      <h1 class="classes__title">Our Classes</h1>
+      <img loading="lazy" class="classes__image" src="{{ $courseSetting->class_image }}" alt="">
+      <h1 class="classes__title">{{ $courseSetting->class_heading }}</h1>
     </div>
     <div class="container">
       <div class="row classes__content">
