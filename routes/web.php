@@ -7,6 +7,7 @@ use App\Http\Controllers\CourseController;
 use App\Http\Controllers\CourseSettingController;
 use App\Http\Controllers\NutritionController;
 use App\Http\Controllers\SocialController;
+use App\Http\Controllers\TrainerController;
 use App\Http\Controllers\StaticPages;
 use Database\Seeders\CourseSettingSeeder;
 use Illuminate\Support\Facades\Route;
@@ -89,6 +90,15 @@ Route::controller(CourseController::class)->group(function () {
 Route::controller(CourseSettingController::class)->group(function () {
     Route::get('admin/classes-settings', 'index');
     Route::post('admin/classes-settings', 'update');
+});
+
+Route::controller(TrainerController::class)->group(function () {
+    Route::get('admin/all-trainers', 'index');
+    Route::get('admin/new-trainer', 'create');
+    Route::post('admin/all-trainers', 'store');
+    Route::get('admin/all-trainers/{id}/edit-trainer', 'edit');
+    Route::post('admin/all-trainers/{id}', 'update');
+    Route::delete('admin/all-trainers/{id}/delete', 'delete');
 });
 
 

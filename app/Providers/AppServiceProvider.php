@@ -12,7 +12,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\View;
 use App\Models\Home;
-
+use App\Models\Trainer;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -75,5 +75,8 @@ class AppServiceProvider extends ServiceProvider
 
         $courses = Course::all();
         View::share('courses', $courses);
+
+        $trainers = Trainer::all();
+        View::share('trainers', $trainers);
     }
 }

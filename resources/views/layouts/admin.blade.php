@@ -59,7 +59,7 @@
                             Trainers
                         </div>
                         <li class="collapse ps-4 " id="collapseExample4">
-                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/trainers-settings">Trainers Settings</a>
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/new-trainer">New Trainer</a>
                         </li>
                         <li class="collapse ps-4 " id="collapseExample4">
                             <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/all-trainers">All Trainers</a>
