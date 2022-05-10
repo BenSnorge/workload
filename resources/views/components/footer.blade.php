@@ -5,17 +5,11 @@
         <div class="footer__links d-flex flex-column py-5">
           <h4>Contact Us</h4>
           <a class="footer__link" href="#">Link</a>
-          <a class="footer__link" href="#">Link</a>
-          <a class="footer__link" href="#">Link</a>
-          <a class="footer__link" href="#">Link</a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="footer__links d-flex flex-column py-5">
           <h4>Privacy & Policy</h4>
-          <a class="footer__link" href="#">Link</a>
-          <a class="footer__link" href="#">Link</a>
-          <a class="footer__link" href="#">Link</a>
           <a class="footer__link" href="#">Link</a>
         </div>
       </div>
