@@ -14,10 +14,8 @@ class FooterController extends Controller
 
     public function index()
     {
-        $footer = Footer::all();
-        return view('admin/footer', [
-            'footer' => $footer
-        ]);
+        /*  $footer = Footer::all(); */
+        return view('admin/footer');
     }
 
     /* public function edit($id)
@@ -30,16 +28,19 @@ class FooterController extends Controller
         ]);
     } */
 
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
 
-        $footer = Footer::where([
-            'id' => $id,
-        ])->first();
-        $footer->trainer_img = $request->get('trainer_img');
-        $footer->trainer_name = $request->get('trainer_name');
-        $footer->trainer_p = $request->get('trainer_p');
-        $footer->trainer_link = $request->get('trainer_link');
+        $footer = Footer::find(1);
+        $footer->footer_header1 = $request->get('footer_header1');
+        $footer->footer_header2 = $request->get('footer_header2');
+        $footer->footer_link1 = $request->get('footer_link1');
+        $footer->footer_link2 = $request->get('footer_link2');
+        $footer->footer_link3 = $request->get('footer_link3');
+        $footer->footer_city = $request->get('footer_city');
+        $footer->footer_street = $request->get('footer_street');
+        $footer->footer_zipcode = $request->get('footer_zipcode');
+        $footer->footer_phone = $request->get('footer_phone');
         $footer->save();
 
 

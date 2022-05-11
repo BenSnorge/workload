@@ -70,7 +70,7 @@
                             Memberships Plans
                         </div>
                         <li class="collapse ps-4 " id="collapseExample5">
-                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/plans-settings">Pans Settings</a>
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/plans-settings">Plans Settings</a>
                         </li>
                     </li>
                     <li class="nav-item py-2">

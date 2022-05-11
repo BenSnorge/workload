@@ -8,6 +8,7 @@ use App\Models\CourseSetting;
 use App\Models\Nutrition;
 use App\Models\Social;
 use App\Models\Course;
+use App\Models\Footer;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\View;
@@ -78,5 +79,8 @@ class AppServiceProvider extends ServiceProvider
 
         $trainers = Trainer::all();
         View::share('trainers', $trainers);
+
+        $footer = Footer::find(1);
+        View::share('footer', $footer);
     }
 }

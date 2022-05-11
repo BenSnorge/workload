@@ -4,92 +4,46 @@
     <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 mb-4">
             <div class="card">
-                <h5 class="card-header">Edit Home Page Content Settings</h5>
+                <h5 class="card-header">Edit Footer Settings</h5>
                 <div class="card-body">
-            <form method="POST" action="/admin/home-content">
+            <form method="POST" action="/admin/footer">
                 @csrf
                 <div class="form-group py-2">
-                    <label for="inputcontentheading1">Content Heading One</label>
-                    <input id="inputcontentheading1" type="text" class="form-control " name="content_heading1" value="{{ old('content_heading1', $content1->content_heading) }}" autocomplete="content_heading1" autofocus placeholder="Add Content Heading">
+                    <label for="inputfooterheading1">Heading One</label>
+                    <input id="inputfooterheading1" type="text" class="form-control " name="footer_header1" value="{{ old('footer_header1', $footer->footer_header1) }}" autocomplete="footer_header1" autofocus placeholder="Add Heading">
                 </div>
                 <div class="form-group py-2">
-                    <label for="inputcontenttext1">Content Text</label>
-                    <input id="inputcontenttext1" type="text" class="form-control " name="content_p1" value="{{ old('content_p1', $content1->content_p) }}" autocomplete="content_p1" autofocus placeholder="Add Text">
-                </div>
-                <hr>
-                <div class="form-group py-2">
-                    <label for="inputcontentheading2">Content Heading Two</label>
-                    <input id="inputcontentheading2" type="text" class="form-control " name="content_heading2" value="{{ old('content_heading2', $content2->content_heading) }}" autocomplete="content_heading2" autofocus placeholder="Add Content Heading">
-                </div>
-                
-                <div class="form-group py-2">
-                    <label for="inputcontenttext2">Content Text Two</label>
-                    <input id="inputcontenttext2" type="text" class="form-control " name="content_p2" value="{{ old('content_p2', $content2->content_p) }}" autocomplete="content_p2" autofocus placeholder="Add Text">
+                    <label for="inputfooterheading2">Heading Two</label>
+                    <input id="inputfooterheading2" type="text" class="form-control " name="footer_header2" value="{{ old('footer_header2', $footer->footer_header2) }}" autocomplete="footer_header2" autofocus placeholder="Add Heading 2">
                 </div>
                 <div class="form-group py-2">
-                    <label for="inputcontentbtn1">Button 1</label>
-                    <input id="inputcontentbtn1" type="text" class="form-control"
-                    name="content_button2"  value="{{old('content_button2', $content2->content_button)}}"  autocomplete="content_button2" autofocus placeholder="Add Button Title">
+                    <label for="inputfooterlink1">Link 1</label>
+                    <input id="inputfooterlink1" type="text" class="form-control " name="footer_link1" value="{{ old('footer_link1', $footer->footer_link1) }}" autocomplete="footer_link1" autofocus placeholder="Add Link 1">
                 </div>
                 <div class="form-group py-2">
-                    <label for="inputcontentimg1">Content Image URL</label>
-                    <input id="inputcontentimg1" type="text" class="form-control " value="{{old('content_image2', $content2->content_image)}}" name="content_image2"  autocomplete="content_image2" autofocus placeholder="Add Image URL">
-                </div>
-                <hr>
-                <div class="form-group py-2">
-                    <label for="inputcontentheading3">Content Heading Three</label>
-                    <input id="inputcontentheading3" type="text" class="form-control " name="content_heading3" value="{{ old('content_heading3', $content3->content_heading) }}" autocomplete="content_heading3" autofocus placeholder="Add Content Heading">
+                    <label for="inputfooterlink2">Link 2</label>
+                    <input id="inputfooterlink2" type="text" class="form-control " name="footer_link2" value="{{ old('footer_link2', $footer->footer_link2) }}" autocomplete="footer_link2" autofocus placeholder="Add Link 2">
                 </div>
                 <div class="form-group py-2">
-                    <label for="inputcontenttext3">Content Text Three</label>
-                    <input id="inputcontenttext3" type="text" class="form-control " name="content_p3" value="{{ old('content_p3', $content3->content_p) }}" autocomplete="content_p3" autofocus placeholder="Add Text">
+                    <label for="inputfooterlink3">Link 3</label>
+                    <input id="inputfooterlink3" type="text" class="form-control " name="footer_link3" value="{{ old('footer_link3', $footer->footer_link3) }}" autocomplete="footer_link3" autofocus placeholder="Add Link 3">
                 </div>
                 <div class="form-group py-2">
-                    <label for="inputcontentbtn2">Button 2</label>
-                    <input id="inputcontentbtn2" type="text" class="form-control"
-                    name="content_button3"  value="{{old('content_button3', $content3->content_button)}}"  autocomplete="content_button3" autofocus placeholder="Add Button Title">
+                    <label for="inputfootercity">City</label>
+                    <input id="inputfootercity" type="text" class="form-control " name="footer_city" value="{{ old('footer_city', $footer->footer_city) }}" autocomplete="footer_city" autofocus placeholder="City">
                 </div>
                 <div class="form-group py-2">
-                    <label for="inputcontentimg2">Content Image URL</label>
-                    <input id="inputcontentimg2" type="text" class="form-control " value="{{old('content_image3', $content3->content_image)}}" name="content_image3"  autocomplete="content_image3" autofocus placeholder="Add Image URL">
-                </div><hr>
-                <div class="form-group py-2">
-                    <label for="inputcontentheading4">Content Heading Four</label>
-                    <input id="inputcontentheading4" type="text" class="form-control " name="content_heading4" value="{{ old('content_heading4', $content4->content_heading) }}" autocomplete="content_heading4" autofocus placeholder="Add Content Heading">
-                </div>
-                
-                <div class="form-group py-2">
-                    <label for="inputcontenttext4">Content Text Four</label>
-                    <input id="inputcontenttext4" type="text" class="form-control " name="content_p4" value="{{ old('content_p4', $content4->content_p) }}" autocomplete="content_p4" autofocus placeholder="Add Text">
+                    <label for="inputfooterstreet">Street</label>
+                    <input id="inputfooterstreet" type="text" class="form-control " name="footer_street" value="{{ old('footer_street', $footer->footer_street) }}" autocomplete="footer_street" autofocus placeholder="Street">
                 </div>
                 <div class="form-group py-2">
-                    <label for="inputcontentbtn3">Button 3</label>
-                    <input id="inputcontentbtn3" type="text" class="form-control"
-                    name="content_button4"  value="{{old('content_button4', $content4->content_button)}}"  autocomplete="content_button4" autofocus placeholder="Add Button Title">
+                    <label for="inputfooterzip">Zipcode</label>
+                    <input id="inputfooterzip" type="text" class="form-control " name="footer_zipcode" value="{{ old('footer_zipcode', $footer->footer_zipcode) }}" autocomplete="footer_zipcode" autofocus placeholder="Zip Code">
                 </div>
                 <div class="form-group py-2">
-                    <label for="inputcontentimg3">Content Image URL</label>
-                    <input id="inputcontentimg3" type="text" class="form-control " value="{{old('content_image4', $content4->content_image)}}" name="content_image4"  autocomplete="content_image4" autofocus placeholder="Add Image URL">
-                </div><hr>
-                <div class="form-group py-2">
-                    <label for="inputcontentheading5">Content Heading Five</label>
-                    <input id="inputcontentheading5" type="text" class="form-control " name="content_heading5" value="{{ old('content_heading5', $content5->content_heading) }}" autocomplete="content_heading5" autofocus placeholder="Add Content Heading">
+                    <label for="inputfooterphone">Phone Number</label>
+                    <input id="inputfooterphone" type="text" class="form-control " name="footer_phone" value="{{ old('footer_phone', $footer->footer_phone) }}" autocomplete="footer_phone" autofocus placeholder="Phone Number">
                 </div>
-                
-                <div class="form-group py-2">
-                    <label for="inputcontenttext5">Content Text Five</label>
-                    <input id="inputcontenttext5" type="text" class="form-control " name="content_p5" value="{{ old('content_p5', $content5->content_p) }}" autocomplete="content_p5" autofocus placeholder="Add Text">
-                </div>
-                <div class="form-group py-2">
-                    <label for="inputcontentbtn4">Button 4</label>
-                    <input id="inputcontentbtn4" type="text" class="form-control"
-                    name="content_button5"  value="{{old('content_button5', $content5->content_button)}}"  autocomplete="content_button5" autofocus placeholder="Add Button Title">
-                </div>
-                <div class="form-group py-2">
-                    <label for="inputcontentimg4">Content Image URL</label>
-                    <input id="inputcontentimg4" type="text" class="form-control " value="{{old('content_image5', $content5->content_image)}}" name="content_image5"  autocomplete="content_image5" autofocus placeholder="Add Image URL">
-                </div>
-                
                 <div class="row">
                     <div class="col-sm-6 pb-2 pb-sm-4 pb-lg-0 pr-0">
                         <button type="submit" class="btn btn-space btn-primary mt-3">Submit</button>

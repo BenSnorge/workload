@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ContentController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\CourseSettingController;
+use App\Http\Controllers\FooterController;
 use App\Http\Controllers\NutritionController;
 use App\Http\Controllers\SocialController;
 use App\Http\Controllers\TrainerController;
@@ -99,6 +100,11 @@ Route::controller(TrainerController::class)->group(function () {
     Route::get('admin/all-trainers/{id}/edit-trainer', 'edit');
     Route::post('admin/all-trainers/{id}', 'update');
     Route::delete('admin/all-trainers/{id}/delete', 'delete');
+});
+
+Route::controller(FooterController::class)->group(function () {
+    Route::get('admin/footer', 'index');
+    Route::post('admin/footer', 'update');
 });
 
 

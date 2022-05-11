@@ -20,11 +20,6 @@ return new class extends Migration
             $table->string('footer_link1')->nullable();
             $table->string('footer_link2')->nullable();
             $table->string('footer_link3')->nullable();
-            $table->string('footer_link4')->nullable();
-            $table->string('footer_link5')->nullable();
-            $table->string('footer_linn6')->nullable();
-            $table->string('footer_link7')->nullable();
-            $table->string('footer_link8')->nullable();
             $table->string('footer_city')->nullable();
             $table->string('footer_street')->nullable();
             $table->string('footer_zipcode')->nullable();

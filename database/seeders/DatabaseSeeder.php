@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
         $this->call(NutritionSeeder::class);
         $this->call(SocialSeeder::class);
         $this->call(TrainerSeeder::class);
+        $this->call(FooterSeeder::class);
         $this->call(CourseSeeder::class);
         $this->call(CourseSettingSeeder::class);
         $this->call(UsersSeeder::class);

@@ -7,6 +7,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+use Illuminate\Support\Carbon;
 
 class UsersSeeder extends Seeder
 {
@@ -21,6 +22,11 @@ class UsersSeeder extends Seeder
             'name' => 'john',
             'email' => 'john@gmail.com',
             'password' => '12345678',
+        ]);
+        DB::table('users')->insert([
+            'name' => 'Billy',
+            'email' => 'billy@gmail.com',
+            'password' => Hash::make('12345678'),
         ]);
     }
 }
