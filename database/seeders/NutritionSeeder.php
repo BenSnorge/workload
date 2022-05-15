@@ -28,7 +28,7 @@ class NutritionSeeder extends Seeder
         DB::table('nutrition')->insert([
             'content_heading' => 'Why nutrition is so important',
             'content_p' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa numquam neque veniam debitis ipsam commodi perspiciatis adipisci fugiat fuga sequi repellat, doloremque deleniti voluptatem voluptates? Explicabo temporibus voluptatum nulla, minima quod eius optio nostrum! Officiis, dolores inventore! Facere dolorem voluptates totam excepturi nam ut? Consectetur, maxime? Quas nihil ipsam obcaecati.',
-            'content_image' => 'https://images.unsplash.com/photo-1610348725531-843dff563e2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80',
+            'content_image' => '',
             'updated_at' => Carbon::now(),
             'created_at' => Carbon::now(),
 

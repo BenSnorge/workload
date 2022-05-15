@@ -75,13 +75,13 @@
                     </li>
                     <li class="nav-item py-2">
                         <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample">
-                            Members
+                            Users
                         </div>
                         <li class="collapse ps-4 " id="collapseExample6">
-                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/all-members">All Members</a>
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/all-members">All Users</a>
                         </li>
                         <li class="collapse ps-4 " id="collapseExample6">
-                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/add-members">Add Members</a>
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/add-members">Add User</a>
                         </li>
                     </li>
                     <li class="nav-item py-2">
@@ -103,14 +103,14 @@
                 </ul>
                 <hr>
                 <div class="dropdown pb-4">
-                    <a href="#" class="d-flex align-items-center text-black text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href="#" class="d-flex align-items-center text-black text-decoration-none dropdown-toggle cursor-pointer" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="d-none d-sm-inline mx-1">{{ Auth::user()->name }}</span>
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                        <li>
-                          <form method="POST" action="{{ route('logout') }}">
+                    <ul class="dropdown-menu dropdown-menu text-small cursor-pointer" aria-labelledby="dropdownUser1">
+                        <li class="cursor-pointer">
+                          <form  method="POST" action="{{ route('logout') }}">
                             @csrf
-                          <a class="dropdown-item cursor-pointer" :href="route('logout')"
+                          <a class="dropdown-item btn" :href="route('logout')"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">
                                 {{ __('Log Out') }}</a></form>

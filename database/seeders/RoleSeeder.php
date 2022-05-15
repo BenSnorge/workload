@@ -5,11 +5,9 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
 use Illuminate\Support\Carbon;
 
-class UsersSeeder extends Seeder
+class RoleSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,20 +16,13 @@ class UsersSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'name' => 'Billy',
-            'email' => 'billy@gmail.com',
-            'role_id' => '1',
-            'password' => Hash::make('12345678'),
+        DB::table('roles')->insert([
+            'title' => 'Admin',
             'updated_at' => Carbon::now(),
             'created_at' => Carbon::now(),
         ]);
-
-        DB::table('users')->insert([
-            'name' => 'Billy',
-            'email' => 'billy@gmail.com',
-            'role_id' => '1',
-            'password' => Hash::make('12345678'),
+        DB::table('roles')->insert([
+            'title' => 'Customer',
             'updated_at' => Carbon::now(),
             'created_at' => Carbon::now(),
         ]);

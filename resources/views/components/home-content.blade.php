@@ -41,6 +41,9 @@
         </div>
       </div>
       </div>
+      <div class="home-content__section">
+
+      
       <div class="row ">
         <div class="col-lg-6">
           <div class="home-content__box d-flex flex-column justify-content-center  align-items-center">
@@ -54,6 +57,7 @@
           <img loading="lazy" src="{{ $content4->content_image }}" class="col-12" alt="">
           </div>
         </div>
+      </div>
       </div>
       <div class="row ">
         <div class="col-lg-6">
