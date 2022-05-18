@@ -7,6 +7,11 @@ use App\Models\Content;
 
 class ContentController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+        $this->middleware('is_admin');
+    }
     public function homeContent()
     {
         return view('/admin/home-content');

@@ -7,6 +7,11 @@ use App\Models\Card;
 
 class CardController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+        $this->middleware('is_admin');
+    }
     public function card()
     {
         return view('/admin/card');

@@ -28,9 +28,9 @@ class UsersSeeder extends Seeder
         ]);
 
         DB::table('users')->insert([
-            'name' => 'Billy',
-            'email' => 'billy@gmail.com',
-            'role_id' => '1',
+            'name' => 'John',
+            'email' => 'john@mail.com',
+            'role_id' => '2',
             'password' => Hash::make('12345678'),
             'updated_at' => Carbon::now(),
             'created_at' => Carbon::now(),

@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class NutritionController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+        $this->middleware('is_admin');
+    }
     public function nutritionContent()
     {
         return view('/admin/nutrition');

@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class CourseSettingController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+        $this->middleware('is_admin');
+    }
     public function index()
     {
         return view('/admin/classes-settings');

@@ -7,6 +7,11 @@ use App\Models\Social;
 
 class SocialController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+        $this->middleware('is_admin');
+    }
     public function socialContent()
     {
         return view('/admin/social');
