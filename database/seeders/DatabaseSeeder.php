@@ -37,7 +37,10 @@ class DatabaseSeeder extends Seeder
             CourseSeeder::class,
             CourseSettingSeeder::class,
             UsersSeeder::class,
-            RoleSeeder::class
+            RoleSeeder::class,
+            MembershipSeeder::class,
+            BenefitsPlanOneSeeder::class,
+            BenefitsPlanTwoSeeder::class,
         ]);
     }
 }

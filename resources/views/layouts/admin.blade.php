@@ -67,10 +67,16 @@
                     </li>
                     <li class="nav-item py-2">
                         <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
-                            Memberships Plans
+                            Membership Plans
                         </div>
                         <li class="collapse ps-4 " id="collapseExample5">
-                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/plans-settings">Plans Settings</a>
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/membership-settings">Membership Settings</a>
+                        </li>
+                        <li class="collapse ps-4 " id="collapseExample5">
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/all-plan-one">Benefits Plan One</a>
+                        </li>
+                        <li class="collapse ps-4 " id="collapseExample5">
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/all-plan-two">Benefits Plan Two</a>
                         </li>
                     </li>
                     <li class="nav-item py-2">

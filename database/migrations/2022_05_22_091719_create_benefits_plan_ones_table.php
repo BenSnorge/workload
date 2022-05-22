@@ -13,14 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('memberships', function (Blueprint $table) {
+        Schema::create('benefits_plan_ones', function (Blueprint $table) {
             $table->id();
-            $table->string('membership_img')->nullable();
-            $table->string('membership_heading')->nullable();
-            $table->string('membership_plan');
-            $table->string('membership_price')->nullable();
-            $table->string('membership_btn')->nullable();
-            $table->string('membership_description')->nullable();
+            $table->string('benefit');
+            $table->string('icon');
             $table->timestamps();
         });
     }
@@ -32,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('memberships');
+        Schema::dropIfExists('benefits_plan_ones');
     }
 };

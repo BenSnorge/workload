@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Models\BenefitsPlanOne;
+use App\Models\BenefitsPlanTwo;
 use App\Models\Card;
 use App\Models\Content;
 use App\Models\CourseSetting;
@@ -13,6 +15,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\View;
 use App\Models\Home;
+use App\Models\Membership;
 use App\Models\Trainer;
 
 class AppServiceProvider extends ServiceProvider
@@ -82,5 +85,17 @@ class AppServiceProvider extends ServiceProvider
 
         $footer = Footer::find(1);
         View::share('footer', $footer);
+
+        $membership1 = Membership::find(1);
+        View::share('membership1', $membership1);
+        $membership2 = Membership::find(2);
+        View::share('membership2', $membership2);
+        $membership3 = Membership::find(3);
+        View::share('membership3', $membership3);
+
+        $benefitsOne = BenefitsPlanOne::all();
+        View::share('benefitsOne', $benefitsOne);
+        $benefitsTwo = BenefitsPlanTwo::all();
+        View::share('benefitsTwo', $benefitsTwo);
     }
 }

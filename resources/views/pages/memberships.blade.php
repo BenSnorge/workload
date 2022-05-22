@@ -17,14 +17,9 @@
             <h4>$800</h4>
             <div class="membership__lists">
               <ul class="membership__benefits">
-              <li><i class="fa-solid fa-check"></i> 24 hour access to gym </i></li>
-              <li><i class="fa-solid fa-check"></i> All classes included</i></li>
-              <li><i class="fa-solid fa-check"></i> Personal sessions with a trainer</li>
-              <li><i class="fa-solid fa-check"></i> Juice Bar</li>
-              <li><i class="fa-solid fa-check"></i> Nutrition classes</li>
-              <li><i class="fa-solid fa-check"></i> Meal Plan</li>
-              <li><i class="fa-solid fa-check"></i> Customized workout plan</li>
-
+                @foreach ($benefitsOne as $benefit)
+                <li><i class="fa-solid {{ $benefit->icon }}"></i> {{ $benefit->benefit }}</i></li>
+              @endforeach
             </ul>
               {{-- <ul class="membership__icons">
                 <li><i class="fa-solid fa-check"></i></li>
@@ -48,13 +43,16 @@
             <h4>$50</h4>
             <div class="membership__lists">
               <ul class="membership__benefits">
-              <li><i class="fa-solid fa-check"></i> 24 hour access to gym </i></li>
+                @foreach ($benefitsTwo as $benefit)
+                <li><i class="fa-solid {{ $benefit->icon }}"></i> {{ $benefit->benefit }}</i></li>
+              @endforeach
+              {{-- <li><i class="fa-solid fa-check"></i> 24 hour access to gym </i></li>
               <li><i class="fa-solid fa-check"></i> Juice Bar</li>
               <li><i class="fa-solid fa-check"></i> Meal Plan</li>
               <li><i class="fa-solid fa-x"></i> All classes included</i></li>
               <li><i class="fa-solid fa-x"></i> Personal sessions with a trainer</li>
               <li><i class="fa-solid fa-x"></i> Nutrition classes</li>
-              <li><i class="fa-solid fa-x"></i> Customized workout plan</li>
+              <li><i class="fa-solid fa-x"></i> Customized workout plan</li> --}}
 
             </ul>
               {{-- <ul class="membership__icons">

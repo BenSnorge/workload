@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\BenefitsPlanOneController;
+use App\Http\Controllers\BenefitsPlanTwoController;
 use App\Http\Controllers\CardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ContentController;
@@ -7,6 +9,7 @@ use App\Http\Controllers\CourseController;
 use App\Http\Controllers\CourseSettingController;
 use App\Http\Controllers\CustomerDashboard;
 use App\Http\Controllers\FooterController;
+use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\NutritionController;
 use App\Http\Controllers\SocialController;
 use App\Http\Controllers\TrainerController;
@@ -48,13 +51,7 @@ Route::get('/pages/login', function () {
 Route::get('/pages/register', function () {
     return view('pages/register');
 });
-/* Route::get('/user-dashboard/welcome', function () {
-    return view('/user-dashboard/welcome');
-})->middleware(['auth', 'is_customer'])->name('welcome'); */
 
-/* Route::get('/admin/home-page', function () {
-    return view('admin/home-page');
-})->middleware(['auth'])->name('home-page'); */
 
 Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'index');
@@ -110,6 +107,31 @@ Route::controller(TrainerController::class)->group(function () {
 Route::controller(FooterController::class)->group(function () {
     Route::get('admin/footer', 'index');
     Route::post('admin/footer', 'update');
+});
+
+Route::controller(MembershipController::class)->group(function () {
+    Route::get('admin/membership-settings', 'index');
+    /*  Route::get('admin/membership-pro', 'indexPro'); */
+    Route::post('admin/membership-settings', 'update');
+});
+
+
+Route::controller(BenefitsPlanOneController::class)->group(function () {
+    Route::get('admin/all-plan-one', 'index')->middleware(['auth', 'is_admin'])->name('all-plan-one');
+    Route::get('admin/create-benefits-plan-one', 'create');
+    Route::post('admin/all-plan-one', 'store');
+    Route::get('admin/all-plan-one/{id}/plan-one-edit', 'edit');
+    Route::post('admin/all-plan-one/{id}', 'update');
+    Route::delete('admin/all-plan-one/{id}/delete', 'delete');
+});
+
+Route::controller(BenefitsPlanTwoController::class)->group(function () {
+    Route::get('admin/all-plan-two', 'index')->middleware(['auth', 'is_admin'])->name('all-plan-two');
+    Route::get('admin/create-benefits-plan-two', 'create');
+    Route::post('admin/all-plan-two', 'store');
+    Route::get('admin/all-plan-two/{id}/plan-two-edit', 'edit');
+    Route::post('admin/all-plan-two/{id}', 'update');
+    Route::delete('admin/all-plan-two/{id}/delete', 'delete');
 });
 
 
