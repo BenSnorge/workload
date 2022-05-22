@@ -26,8 +26,9 @@
           <a class="navlink" href="/trainers">Trainers</a>
           <a href="/nutrition" class="navlink">Nutrition</a>
           <a href="/memberships" class="navlink">Membership</a>
-
+          
         </div>
+        <a class="btn btn-outline-primary ms-auto" href="/login">Log In</a>
       </div>
     </div>
   </nav>

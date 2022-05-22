@@ -34,7 +34,7 @@
                 <hr>
                 <div class="dropdown pb-4">
                     <a href="#" class="d-flex align-items-center text-black text-decoration-none dropdown-toggle cursor-pointer" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="d-none d-sm-inline mx-1">{{ Auth::user()->name }}</span>
+                        <span class="d-none d-sm-inline mx-1">{{ Auth::user()->fname }}</span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu text-small cursor-pointer" aria-labelledby="dropdownUser1">
                         <li class="cursor-pointer">

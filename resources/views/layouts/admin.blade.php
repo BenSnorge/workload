@@ -84,10 +84,10 @@
                             Users
                         </div>
                         <li class="collapse ps-4 " id="collapseExample6">
-                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/all-members">All Users</a>
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/all-users">All Users</a>
                         </li>
                         <li class="collapse ps-4 " id="collapseExample6">
-                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/add-members">Add User</a>
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/admin/new-user">Add User</a>
                         </li>
                     </li>
                     <li class="nav-item py-2">
@@ -110,7 +110,7 @@
                 <hr>
                 <div class="dropdown pb-4">
                     <a href="#" class="d-flex align-items-center text-black text-decoration-none dropdown-toggle cursor-pointer" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="d-none d-sm-inline mx-1">{{ Auth::user()->name }}</span>
+                        <span class="d-none d-sm-inline mx-1">{{ Auth::user()->fname }}</span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu text-small cursor-pointer" aria-labelledby="dropdownUser1">
                         <li class="cursor-pointer">

@@ -14,6 +14,7 @@ use App\Http\Controllers\NutritionController;
 use App\Http\Controllers\SocialController;
 use App\Http\Controllers\TrainerController;
 use App\Http\Controllers\StaticPages;
+use App\Http\Controllers\UserController;
 use Database\Seeders\CourseSettingSeeder;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
@@ -132,6 +133,15 @@ Route::controller(BenefitsPlanTwoController::class)->group(function () {
     Route::get('admin/all-plan-two/{id}/plan-two-edit', 'edit');
     Route::post('admin/all-plan-two/{id}', 'update');
     Route::delete('admin/all-plan-two/{id}/delete', 'delete');
+});
+
+Route::controller(UserController::class)->group(function () {
+    Route::get('admin/all-users', 'index')->middleware(['auth', 'is_admin'])->name('all-users');
+    Route::get('admin/create-user', 'create');
+    Route::post('admin/all-users', 'store');
+    Route::get('admin/all-users/{id}/user-edit', 'edit');
+    Route::post('admin/all-users/{id}', 'update');
+    Route::delete('admin/all-users/{id}/delete', 'delete');
 });
 
 
