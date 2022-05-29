@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\View;
 use App\Models\Home;
 use App\Models\Membership;
 use App\Models\Trainer;
+use App\Models\Cashier\User;
+use Laravel\Cashier\Cashier;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -37,6 +39,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Cashier::useCustomerModel(User::class);
+
         $home = Home::find(1);
         View::share("home", $home);
         $card = Card::find(1);

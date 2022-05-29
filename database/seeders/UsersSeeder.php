@@ -19,7 +19,7 @@ class UsersSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
-            'fname' => 'Billy',
+            'name' => 'Billy',
             'email' => 'billy@gmail.com',
             'role_id' => '1',
             'password' => Hash::make('12345678'),
@@ -28,7 +28,7 @@ class UsersSeeder extends Seeder
         ]);
 
         DB::table('users')->insert([
-            'fname' => 'John',
+            'name' => 'John',
             'email' => 'john@mail.com',
             'role_id' => '2',
             'password' => Hash::make('12345678'),

@@ -41,6 +41,7 @@ class DatabaseSeeder extends Seeder
             MembershipSeeder::class,
             BenefitsPlanOneSeeder::class,
             BenefitsPlanTwoSeeder::class,
+            PlanTableSeeder::class,
         ]);
     }
 }

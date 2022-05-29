@@ -19,11 +19,16 @@
     <input type="checkbox" class="form-check-input" id="remember_me" name="remember">
     <label class="form-check-label" for="remember_me">{{ __('Remember me') }}</label>
   </div>
-  <button class="btn btn-primary" type="submit">{{ __('Log in') }}</button>
+  <button class="btn btn-primary mb-2" type="submit">{{ __('Log in') }}</button>
     @if (Route::has('password.request'))
+
+    <a class="mt-3 login__link" href="{{ route('register') }}">
+        {{ __('Register') }}
+    </a>
     <a class="mt-3 login__link" href="{{ route('password.request') }}">
         {{ __('Forgot your password?') }}
     </a>
+    
     @endif
     </form>
     </div>

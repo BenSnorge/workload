@@ -2,19 +2,19 @@
 @section('content')
   <div class="membership">
     <div class="membership__hero">
-      <img class="membership__image" src="https://images.unsplash.com/photo-1518459031867-a89b944bffe4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2882&q=80" alt="">
-      <h1 class="membership__title">Become A Member</h1>
+      <img class="membership__image" src="{{ $membership1->membership_img }}" alt="">
+      <h1 class="membership__title">{{ $membership1->membership_heading }}</h1>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <div class="membership__offer">
             <div class="membership__offer--pro">
-              <h1>Pro</h1>
+              <h1>{{ $membership2->membership_plan }}</h1>
             </div>
             
             <h3>Billed Annually</h3>
-            <h4>$800</h4>
+            <h4>{{ $membership2->membership_price }}</h4>
             <div class="membership__lists">
               <ul class="membership__benefits">
                 @foreach ($benefitsOne as $benefit)
@@ -29,18 +29,18 @@
               </ul> --}}
             </div>
 
-            <a href="#" class="btn btn-outline-danger mb-5 membership__btn">Sign Up!</a>
+            <a href="/login" class="btn btn-outline-danger mb-5 membership__btn">{{ $membership2->membership_btn }}</a>
             
           </div>
         </div>
         <div class="col-md-6">
           <div class="membership__offer">
             <div class="membership__offer--basic">
-              <h1>Basic</h1>
+              <h1>{{ $membership3->membership_plan }}</h1>
             </div>
             
             <h3>Billed Monthly</h3>
-            <h4>$50</h4>
+            <h4>{{ $membership3->membership_price }}</h4>
             <div class="membership__lists">
               <ul class="membership__benefits">
                 @foreach ($benefitsTwo as $benefit)
@@ -63,13 +63,13 @@
               </ul> --}}
             </div>
 
-            <a href="#" class="btn btn-outline-danger mb-5 membership__btn">Sign Up!</a>
+            <a href="#" class="btn btn-outline-danger mb-5 membership__btn">{{ $membership2->membership_btn }}</a>
             
           </div>
         </div>
         </div>
         <div class="membership__info">
-          <h4>You can book classes or trainer sessions on our basic plan in the membership area. Fees for each class will be $15 and each session $40</h4>
+          <h4>{{ $membership1->membership_description }}</h4>
         </div>
       </div>
     </div>

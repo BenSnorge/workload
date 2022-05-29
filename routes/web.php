@@ -14,6 +14,7 @@ use App\Http\Controllers\NutritionController;
 use App\Http\Controllers\SocialController;
 use App\Http\Controllers\TrainerController;
 use App\Http\Controllers\StaticPages;
+use App\Http\Controllers\Stripe\PaymentController;
 use App\Http\Controllers\UserController;
 use Database\Seeders\CourseSettingSeeder;
 use Illuminate\Support\Facades\Route;
@@ -52,6 +53,15 @@ Route::get('/pages/login', function () {
 Route::get('/pages/register', function () {
     return view('pages/register');
 });
+
+Route::get('/pages/planOne', [PaymentController::class, 'index'])->name('/pages/planOne');
+Route::post('//pages/planOne', [PaymentController::class, 'store'])->name('/pages/planOne');
+
+
+Route::get('/pages/planTwo', [PaymentController::class, 'index'])->name('/pages/planTwo');
+Route::post('//pages/planTwo', [PaymentController::class, 'store'])->name('/pages/planTwo');
+
+
 
 
 Route::controller(HomeController::class)->group(function () {

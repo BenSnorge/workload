@@ -8,7 +8,7 @@
       <span class="hero__title">
         {{ $home->hero_title }}
       </span>
-      <a href="#" class="hero__info-link">
+      <a href="/register" class="hero__info-link">
         {{ $home->hero_link }}
       </a>
     </div>

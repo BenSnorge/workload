@@ -12,8 +12,7 @@
           <thead>
             <tr>
               <th scope="col">Id</th>
-              <th scope="col">First Name</th>
-              <th scope="col">Last Name</th>
+              <th scope="col">Name</th>
               <th scope="col">Role</th>
               <th scope="col">Edit</th>
               <th scope="col">Delete</th>
@@ -24,7 +23,6 @@
             <tr>
               <th scope="row">{{ $user->id }}</th>
               <td>{{ $user->fname }}</td>
-              <td>{{ $user->lname }}</td>
               <td>
                 @if ( $user->role_id == '1')
                     Admin

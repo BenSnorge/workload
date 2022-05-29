@@ -10,12 +10,8 @@
                 @csrf
                 {{-- @method('PUT') --}}
                 <div class="form-group py-2">
-                    <label for="inputfname">First Name</label>
-                    <input id="inputfname" type="text" class="form-control " name="fname" value="{{ old('fname', $users->fname) }}"  autofocus placeholder="First Name">
-                </div>
-                <div class="form-group py-2">
-                    <label for="inputlname">First Name</label>
-                    <input id="inputlname" type="text" class="form-control " name="lname" value="{{ old('lname', $users->lname) }}"  autofocus placeholder="Last Name">
+                    <label for="inputfname">Name</label>
+                    <input id="inputfname" type="text" class="form-control " name="fname" value="{{ old('fname', $users->name) }}"  autofocus placeholder="First Name">
                 </div>
                 <div class="form-group py-2">
                     <label class="pb-2" for="inputrole">Role</label>

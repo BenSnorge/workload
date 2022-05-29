@@ -7,12 +7,8 @@
       @csrf 
       <h3 class="mb-3">Register</h3>
       <div class="mx-auto mb-3">
-        <label class="form-label" for="" value="fname">First Name</label>
-        <input class="form-control" id="fname" type="text" name="fname">
-      </div>
-      <div class="mx-auto mb-3">
-        <label class="form-label" for="" value=lname>Last Name</label>
-        <input class="form-control" id="lname" type="text" name="lname">
+        <label class="form-label" for="" value="name">Name</label>
+        <input class="form-control" id="fname" type="text" name="name">
       </div>
       <div class="mx-auto mb-3">
         <label class="form-label" for="" :value="__('Email')">Email</label>
