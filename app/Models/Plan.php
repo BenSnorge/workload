@@ -18,7 +18,8 @@ class Plan extends Model
         'name',
         'slug',
         'stripe_name',
-        'stripe_id',
+        'stripe_product_id',
+        'stripe_price_id',
         'price',
         'abbreviation'
     ];
@@ -30,5 +31,45 @@ class Plan extends Model
     public function getRouteKeyName()
     {
         return 'slug';
+    }
+
+    public function id(): int
+    {
+        return $this->id;
+    }
+
+    public function name(): string
+    {
+        return $this->name;
+    }
+
+    public function slug(): string
+    {
+        return $this->slug;
+    }
+
+    public function stripeName(): string
+    {
+        return $this->stripe_name;
+    }
+
+    public function stripeProductId(): string
+    {
+        return $this->stripe_product_id;
+    }
+
+    public function stripePriceId(): string
+    {
+        return $this->stripe_price_id;
+    }
+
+    public function price(): string
+    {
+        return '$' . number_format($this->price, 2);
+    }
+
+    public function abbreviation()
+    {
+        return $this->abbreviation;
     }
 }

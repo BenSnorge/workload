@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Plan;
 use Illuminate\Http\Request;
 
 class CustomerDashboard extends Controller
@@ -12,6 +13,7 @@ class CustomerDashboard extends Controller
     }
     public function index()
     {
-        return view('user-dashboard/welcome');
+        $plans = Plan::all();
+        return view('user-dashboard/welcome', ['plans' => $plans]);
     }
 }

@@ -8,6 +8,7 @@ use App\Http\Controllers\ContentController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\CourseSettingController;
 use App\Http\Controllers\CustomerDashboard;
+use App\Http\Controllers\Dashboard\BillingController;
 use App\Http\Controllers\FooterController;
 use App\Http\Controllers\MembershipController;
 use App\Http\Controllers\NutritionController;
@@ -54,12 +55,16 @@ Route::get('/pages/register', function () {
     return view('pages/register');
 });
 
-Route::get('/pages/planOne', [PaymentController::class, 'index'])->name('/pages/planOne');
-Route::post('//pages/planOne', [PaymentController::class, 'store'])->name('/pages/planOne');
+Route::get('/pages/year', [PaymentController::class, 'indexYearly'])->name('/pages/year');
+Route::post('/pages/year', [PaymentController::class, 'storeYearly'])->name('yearly.store');
+
+Route::group(['prefix' => 'dashboard'], function () {
+    Route::get('/billing', [BillingController::class, 'index'])->name('billing');
+});
 
 
-Route::get('/pages/planTwo', [PaymentController::class, 'index'])->name('/pages/planTwo');
-Route::post('//pages/planTwo', [PaymentController::class, 'store'])->name('/pages/planTwo');
+Route::get('/pages/month', [PaymentController::class, 'indexMonthly'])->name('/pages/month');
+Route::post('/pages/month', [PaymentController::class, 'storeMonthly'])->name('monthly.store');
 
 
 

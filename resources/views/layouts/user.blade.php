@@ -54,10 +54,8 @@
         </div>
     </div>
 </div>
-
-  
-  
 </body>
 <script src="{{ mix('js/app.js') }}"></script>
+<script src="https://js.stripe.com/v3/"></script>
 
 </html>

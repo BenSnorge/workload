@@ -5,19 +5,21 @@
 
 <div class="container">
       <div class="row classes__content">
+        @foreach ($plans as $plan)
         <div class="col-md-6">
           <div class="card classes__card">
           <img loading="lazy" src="" class="card-img-top" alt="">
           <div class="card-body">
-          <h5 class="card-title">Subscribe to the Yearly Plan</h5>
+          <h5 class="card-title">Subscribe to the {{ $plan->name }}</h5>
           <p class="card-text">
-            Billed Annually / $800
+          ${{ $plan->price }}
           </p>
-          <a href="/pages/planOne" class="btn btn-outline-dark">Subscribe</a>
+          <a href="/pages{{ $plan->abbreviation }}" class="btn btn-outline-dark">Subscribe</a>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        @endforeach
+        {{-- <div class="col-md-6">
           <div class="card classes__card">
           <img loading="lazy" src="" class="card-img-top" alt="">
           <div class="card-body">
@@ -28,7 +30,9 @@
           <a href="/pages/planTwo" class="btn btn-outline-dark">Subscribe</a>
             </div>
           </div>
-        </div>
+        </div> --}}
+        
+        
       </div>
     </div>
 @endsection

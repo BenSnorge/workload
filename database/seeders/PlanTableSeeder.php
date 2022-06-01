@@ -19,7 +19,8 @@ class PlanTableSeeder extends Seeder
             'name' => 'Monthly Plan',
             'slug' => 'monthly-plan',
             'stripe_name' => 'monthly',
-            'stripe_id' => 'price_1KsR12LHQZAzVj0qeq8y3uYR',
+            'stripe_product_id' => 'prod_LZaBCXy9qdwbPs',
+            'stripe_price_id' => 'price_1KsR12LHQZAzVj0qeq8y3uYR',
             'price' => 50,
             'abbreviation' => '/month'
         ]);
@@ -27,7 +28,8 @@ class PlanTableSeeder extends Seeder
             'name' => 'Yearly Plan',
             'slug' => 'yearly-plan',
             'stripe_name' => 'yearly',
-            'stripe_id' => 'price_1KsR1hLHQZAzVj0q1pGOuC1r',
+            'stripe_product_id' => 'prod_LZaCZRhOINVBbi',
+            'stripe_price_id' => 'price_1KsR1hLHQZAzVj0q1pGOuC1r',
             'price' => 800,
             'abbreviation' => '/year'
         ]);
