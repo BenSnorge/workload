@@ -20,13 +20,23 @@
                     <span class="fs-5 d-none d-sm-inline">User Dashboard</span>
                 </a>
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                    <li class="nav-item py-2">
+                    {{-- <li class="nav-item py-2">
                         <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample1">
                             Subscription
                         </div>
                         <li class="collapse ps-4 " id="collapseExample1">
                             <li class="collapse ps-4 " id="collapseExample1">
                             <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="/user-dashboard/subscription">Settings</a>
+                            </li>
+                        </li>
+                    </li> --}}
+                    <li class="nav-item py-2">
+                        <div class="btn btn-outline-dark" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                            Billing
+                        </div>
+                        <li class="collapse ps-4 " id="collapseExample2">
+                            <li class="collapse ps-4 " id="collapseExample2">
+                            <a class="text-decoration-none p-1 text-dark lh-lg d-block" href="{{ route('billing') }}">Billing</a>
                             </li>
                         </li>
                     </li>

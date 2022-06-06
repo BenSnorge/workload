@@ -20,6 +20,7 @@ use App\Models\Trainer;
 use App\Models\Cashier\User;
 use Laravel\Cashier\Cashier;
 
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -39,7 +40,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Cashier::useCustomerModel(User::class);
+        /* Cashier::useCustomerModel(User::class); */
 
         $home = Home::find(1);
         View::share("home", $home);

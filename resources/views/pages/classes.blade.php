@@ -14,7 +14,7 @@
           <div class="card-body">
           <h5 class="card-title">{{ $course->course_title }}</h5>
           <p class="card-text">{{ $course->course_p }}</p>
-          <a href="#" class="btn btn-outline-dark">{{ $course->course_link }}</a>
+          <a href="/login" class="btn btn-outline-dark">{{ $course->course_link }}</a>
             </div>
           </div>
         </div>

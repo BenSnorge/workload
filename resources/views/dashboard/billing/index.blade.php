@@ -11,13 +11,17 @@
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">Plan</th>
+              <th scope="col">Date</th>
               <th scope="col">Total</th>
               <th scope="col">Action</th>
             </tr>
           </thead>
           <tbody>
-            
+            @foreach ($invoices as $invoice)
+                <td>{{ $invoice->date()->toFormattedDateString() }}</td>
+                <td>{{ $invoice->total() }}</td>
+                <td><a class="btn btn-success" href="{{ route('download', $invoice->id) }}" target="_blank">Download</a></td>
+            @endforeach
           </tbody>
         </table>
       </div>

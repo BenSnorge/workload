@@ -16,8 +16,10 @@ use App\Http\Controllers\SocialController;
 use App\Http\Controllers\TrainerController;
 use App\Http\Controllers\StaticPages;
 use App\Http\Controllers\Stripe\PaymentController;
+use App\Http\Controllers\Stripe\SubscriptionController;
 use App\Http\Controllers\UserController;
 use Database\Seeders\CourseSettingSeeder;
+use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\View;
 
@@ -58,8 +60,16 @@ Route::get('/pages/register', function () {
 Route::get('/pages/year', [PaymentController::class, 'indexYearly'])->name('/pages/year');
 Route::post('/pages/year', [PaymentController::class, 'storeYearly'])->name('yearly.store');
 
+Route::group(['prefix' => 'subscriptions', 'as' => 'subscriptions.'], function () {
+    Route::get('/resume/{subscription}', [SubscriptionController::class, 'update'])->name('update');
+    Route::get('/cancel/{subscription}', [SubscriptionController::class, 'destroy'])->name('destroy');
+});
+
+
+
 Route::group(['prefix' => 'dashboard'], function () {
     Route::get('/billing', [BillingController::class, 'index'])->name('billing');
+    Route::get('/billing/{invoice}', [BillingController::class, 'download'])->name('download');
 });
 
 
