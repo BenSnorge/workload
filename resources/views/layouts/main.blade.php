@@ -1,40 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{ $home->site_title }}</title>
+  <title>Workload</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="{{ mix('css/styles.css') }}">
 </head>
-
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light py-3">
-    <div class="container-fluid">
-      <a class="navbar-brand fs-3 ms-5" href="/">{{ $home->company_name }}</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-5">
-          <a class="navlink" href="/classes">Classes</a>
-          <a class="navlink" href="/trainers">Trainers</a>
-          <a href="/nutrition" class="navlink">Nutrition</a>
-          <a href="/memberships" class="navlink">Membership</a>
-          
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <h3 class="text-center">Mitarbeiter</h3>
+        <div class="row">
+          <div class="col align-self-start pt-5">
+          {{-- @yield('content') --}}
         </div>
-        <a class="btn btn-outline-info ms-auto" href="/login">Log In</a>
+        </div>
+        
       </div>
+      <div class="col-md-7 text-center">
+        <h3 class="ms-5"> Vom {{ $weekStartDate }}</h3> <h3 class="me-5"> Bis {{ $weekEndDate }}</h3>
+        {{-- <div class="row">
+          <div class="col-md-4">Juli
+            <div class="row">
+            <div class="col-sm-3">W1</div>
+            <div class="col-sm-3">W2</div>
+            <div class="col-sm-3">W3</div>
+            <div class="col-sm-3">W4</div>
+          </div>
+          </div>
+          <div class="col-md-4">August
+            <div class="row">
+            <div class="col-sm-3">W1</div>
+            <div class="col-sm-3">W2</div>
+            <div class="col-sm-3">W3</div>
+            <div class="col-sm-3">W4</div>
+          </div>
+          </div>
+          <div class="col-md-4">September
+            <div class="row">
+            <div class="col-sm-3">W1</div>
+            <div class="col-sm-3">W2</div>
+            <div class="col-sm-3">W3</div>
+            <div class="col-sm-3">W4</div>
+          </div>
+          </div>
+         
+        </div> --}}
+      </div>
+      <div class="col-md-3 text-center">
+        <h3>Gesamt</h3>
+
+      </div>
+      
     </div>
-  </nav>
-  @yield('content')
+    @yield('content')
+  </div>
+
+
 
 </body>
 <script src="{{ mix('js/app.js') }}"></script>
-
 </html>

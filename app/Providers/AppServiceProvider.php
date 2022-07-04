@@ -2,23 +2,14 @@
 
 namespace App\Providers;
 
-use App\Models\BenefitsPlanOne;
-use App\Models\BenefitsPlanTwo;
-use App\Models\Card;
-use App\Models\Content;
-use App\Models\CourseSetting;
-use App\Models\Nutrition;
-use App\Models\Social;
-use App\Models\Course;
-use App\Models\Footer;
+use App\Models\Customer;
+use App\Models\Kunde;
+use App\Models\Month;
+use App\Models\User;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\View;
-use App\Models\Home;
-use App\Models\Membership;
-use App\Models\Trainer;
-use App\Models\Cashier\User;
-use Laravel\Cashier\Cashier;
+
 
 
 class AppServiceProvider extends ServiceProvider
@@ -42,65 +33,27 @@ class AppServiceProvider extends ServiceProvider
     {
         /* Cashier::useCustomerModel(User::class); */
 
-        $home = Home::find(1);
-        View::share("home", $home);
-        $card = Card::find(1);
-        View::share('card', $card);
-        $content1 = Content::find(1);
-        View::share('content1', $content1);
-        $content2 = Content::find(2);
-        View::share('content2', $content2);
-        $content3 = Content::find(3);
-        View::share('content3', $content3);
-        $content4 = Content::find(4);
-        View::share('content4', $content4);
-        $content5 = Content::find(5);
-        View::share('content5', $content5);
+        $users = User::all();
+        View::share('users', $users);
 
-        $nutrition1 = Nutrition::find(1);
-        View::share('nutrition1', $nutrition1);
-        $nutrition2 = Nutrition::find(2);
-        View::share('nutrition2', $nutrition2);
-        $nutrition3 = Nutrition::find(3);
-        View::share('nutrition3', $nutrition3);
-        $nutrition4 = Nutrition::find(4);
-        View::share('nutrition4', $nutrition4);
-        $nutrition5 = Nutrition::find(5);
-        View::share('nutrition5', $nutrition5);
-        $nutrition6 = Nutrition::find(6);
-        View::share('nutrition6', $nutrition6);
+        $kunden = Kunde::all();
+        View::share('kunden', $kunden);
 
-        $social1 = Social::find(1);
-        View::share('social1', $social1);
-        $social2 = Social::find(2);
-        View::share('social2', $social2);
-        $social3 = Social::find(3);
-        View::share('social3', $social3);
-        $social4 = Social::find(4);
-        View::share('social4', $social4);
+        $months = Month::all();
+        View::share('months', $months);
 
-        $courseSettings = CourseSetting::find(1);
-        View::share('courseSetting', $courseSettings);
+        $customers = Customer::all();
+        View::share('customers', $customers);
 
-        $courses = Course::all();
-        View::share('courses', $courses);
-
-        $trainers = Trainer::all();
-        View::share('trainers', $trainers);
-
-        $footer = Footer::find(1);
-        View::share('footer', $footer);
-
-        $membership1 = Membership::find(1);
-        View::share('membership1', $membership1);
-        $membership2 = Membership::find(2);
-        View::share('membership2', $membership2);
-        $membership3 = Membership::find(3);
-        View::share('membership3', $membership3);
-
-        $benefitsOne = BenefitsPlanOne::all();
-        View::share('benefitsOne', $benefitsOne);
-        $benefitsTwo = BenefitsPlanTwo::all();
-        View::share('benefitsTwo', $benefitsTwo);
+        /* foreach (Month::all() as $monat) {
+            echo $monat->juli_w1;
+            View::share('monat', $monat);
+        } */
+        $now = Carbon::now();
+        $weekStartDate = $now->startOfWeek(Carbon::MONDAY)->format('d.m');
+        $weekEndDate = $now->endOfWeek(Carbon::FRIDAY)->format('d.m');
+        View::share('now', $now);
+        View::share('weekStartDate', $weekStartDate);
+        View::share('weekEndDate', $weekEndDate);
     }
 }

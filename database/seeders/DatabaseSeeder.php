@@ -27,21 +27,9 @@ class DatabaseSeeder extends Seeder
         $this->call(RoleSeeder::class); */
 
         $this->call([
-            HomeSeeder::class,
-            CardSeeder::class,
-            ContentSeeder::class,
-            NutritionSeeder::class,
-            SocialSeeder::class,
-            TrainerSeeder::class,
-            FooterSeeder::class,
-            CourseSeeder::class,
-            CourseSettingSeeder::class,
+            KundeSeeder::class,
             UsersSeeder::class,
-            RoleSeeder::class,
-            MembershipSeeder::class,
-            BenefitsPlanOneSeeder::class,
-            BenefitsPlanTwoSeeder::class,
-            PlanTableSeeder::class,
+            /*  MonthSeeder::class, */
         ]);
     }
 }
